@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> -->
+    <link rel="stylesheet" href="css/media_query.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Miguel Angel</title>
+</head>
+
+<body>
+    <!-- Header design section -->
+    <header>
+        <div class="header-nav-bar container flex">
+            <div class="logo">Portfolio</div>
+            <i class='bx bx-menu' id="Menu-card"></i>
+            <nav class="nav-bar-items">
+                <a href="#home-container" id="home" >Inicio</a>
+                <a href="#about-section" id="about">Sobre mi</a>
+                <a href="#service-section" id=" services ">Habilidades</a>
+                
+                
+            </nav>
+        </div>
+    </header>
+    <!-- Home design section -->
+    <main>
+        <section class="head-img-intro flex container " id="home-container">
+            <div class="intro-content">
+                <h3 class=" intro-start ">¡Hola!, Soy </h3>
+                <h2 class=" intro-name ">Miguel Angel</h2>
+                <h3 class=" intro-last ">
+                    <span class=" profession ">
+                        Desarrollador Backend
+                    </span>
+                </h3>
+                <p class="intro-main">
+                    Contactos
+                </p>
+                <div class=" social-media ">
+                    <a href="https://github.com/Miguel-Alberto-V" class="icons">
+                        <i class=" fa-brands fa-github-alt "></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/miguel-angel-alberto/" class=" icons ">
+                        <i class=" fa-brands fa-linkedin-in "></i>
+                    </a>
+                    
+                </div>
+                <div class="resume-links">
+                    <a href="/archives/CV_miguel Alberto.pdf" class="cv-resume btn-cls" download="CV_Miguel_Alberto.pdf">Download CV</a>
+                </div>
+            </div>
+            <div class=" main-img ">
+                <img src=" ./assets/dead.png " alt=" ">
+            </div>
+        </section>
+        <!-- About section -->
+        <section class="section-about" id="">
+            <div class="container flex about-section" id="about-section">
+                <div class="about-image">
+                    <img src=" ./assets/fondo2.webp " alt=" ">
+                </div>.webp
+                <div class=" about-content ">
+                    <h3 class=" heading ">
+                        Sobre <span class=" Me ">mi</span> 
+
+                    </h3>
+                    <h2 class=" profession ">Miguel Angel</h2>
+                    <p class=" intro-main ">
+                        Me describo como una persona colaborativa, siempre estoy dispuesto a ofrecer mi ayuda en 
+                    cualquier situación. Soy apasionado por asumir nuevos retos y enfrentar desafíos que me permitan crecer 
+                    tanto personal como profesionalmente. Mi enfoque se basa en valores sólidos, lo que implica un compromiso
+                    firme con la ética, la responsabilidad y el trabajo en equipo
+                    </p>
+                    <div class="making-center flex-column" style="align-items: center;">
+
+                        <div class=" btn-cls about-read-more ">
+                            <a href="#" class=" read-more ">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service section -->
+
+        <section class="service" id="service-section">
+            <div class="container">
+                <div class="heading">
+                    <h2>Mis <span class="Me">Habilidaes</span></h2>
+                </div>
+                <div class="service-offfer flex">
+                    <% skills.forEach(skill => { %>
+                        <div class="boxes-service">
+                            <div class="logo"><i class="<%= skill.icon %>"></i></div>
+                            <div class="service-heading">
+                                <h3><%= skill.title %></h3>
+                            </div>
+                            <p class="intro"><%= skill.description %></p>
+                            <button class="btn-cls service-btn">Leer más</button>
+                        </div>
+                    <% }); %>
+                </div>
+            </div>
+        </section>
+        
+
+    </main>
+
+    <!-- Portfolio section -->
+
+    
+
+    
+    
+    <div class="script-4-header"></div>
+
+    <script src="./JS/index.js"></script>
+</body>
+
+</html>
